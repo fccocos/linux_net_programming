@@ -1,0 +1,27 @@
+ctags -R --c++-kinds=+p --fields=+iaS --extra=+q
+--c++-kinds=+p:为c++文件添加函数原型的标签
+--fields=+iaS:为标签文件中加入继承信息（i）、类成员的访控信息（a）、函数指纹(S)
+--extra=+q :为标签添加类修饰符
+
+
+ctrl+P 向前
+ctrl+N 向后
+ctrl+E 推出下拉窗口，退回到原来录入的文字
+ctrl+Y 推出i下拉窗口，接受当前选项
+Ctrl+X Ctrl+L 整行补齐
+Ctrl+X Ctrl+N 根据当前文件里的关键字补齐
+ctrl+x ctrl+k 根据字典补齐
+ctrl+x ctrl+T 根据同义词字典补齐
+ctrl+x ctrl+I 根据头文件内的关键字补齐
+ctrl+X ctrl+] 根据标签补齐
+ctrl+x ctrl+F 补齐文件名
+ctrl+x ctrl+D 补全宏定义
+ctrl+x ctrl+U 用户自定义补全方式
+帮助文档
+:help omnicppcomplete
+
+vim自动补全功能配置实例
+1.跳转到对应的文件目录 例如:/usr/include/c++ 如果没有（apt install build-essential）
+2.ctags -R --c++-kinds=+p --fields=+iaS --extra=+q
+3.在.vimrc文件中写入对应的tags文件路径，例如：set tags=/usr/iclude/c++/tags
+

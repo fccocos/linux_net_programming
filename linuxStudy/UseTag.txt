@@ -1,0 +1,26 @@
+ctrl+] 跳到当前光标下单词的标签
+crtl+O 返回上一个标签
+ctrl+T 返回上一个标签
+:tag TagName 跳到TagName标签
+如果不希望在当前窗口显示标签
+1. :tag TagName 新窗口显示TagName标签，光标跳到标签处
+2. ctrl+w+] 新窗口显示当前光标下单词的标签，光标跳到标签出
+
+可以用命令在各匹配的标签间移动
+:tfirst 到第一匹配
+:[numbers]tpervious 向前匹配numbers个
+:[numbers]tnext
+:tlast
+:tselect selectName
+:ptag TagName 在预览窗口显示标签
+ctrl+w+} 
+:pclose 
+:pedit file.h 在预览窗口中编辑file.h文件
+:psearch atoi 查找当前文件和任何包含文件中的单词并在预览窗口中显示匹配
+
+用法举例：
+1. 写好一个C/C++文件
+2. 将光标停留在printf
+3. 按住快捷键ctrl+w+]--vim会自动跳到对应的函数源文件，此时能够查看该函数的原型
+4. 按住快捷键ctrl+o返回到原来的地方
+
